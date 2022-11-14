@@ -6,17 +6,6 @@
 //
 
 import Foundation
-
-// Mark: - 로또 번호 생성
-func createLottoNumbers() -> Set<Int> {
-    var lottoNumbers: Set<Int> = []
-    
-    while lottoNumbers.count < 6 {
-        lottoNumbers.insert((Int.random(in: 1...45)))
-    }
-    return lottoNumbers
-}
-
 // Makr: - 회차 번호 생성
 func makeLottoByRounds() -> Dictionary<String, [Int]> {
     var lottoDictionary: Dictionary<String, [Int]> = [String: [Int]]()
